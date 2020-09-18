@@ -87,7 +87,7 @@ public class FileListener extends FileAlterationListenerAdaptor {
      */
     @Override
     public void onStart(FileAlterationObserver observer) {
-        System.out.println("轮询开始");
+        // System.out.println("轮询开始");
     }
 
     /**
@@ -96,6 +96,6 @@ public class FileListener extends FileAlterationListenerAdaptor {
      */
     @Override
     public void onStop(FileAlterationObserver observer) {
-        System.out.println("轮询结束");
+        // System.out.println("轮询结束");
     }
 }

@@ -1,0 +1,9 @@
+server:
+  port: 9999
+
+upload:
+  key: dXBsb2FkLTItcHV0b25nLXB1dG9uZw==
+  url: http://localhost:8080/renren-fast/radar/file/savefile
+#upload:
+#  key: 111
+#  url: http://localhost:8080/springbootjlvpC/file/saveFile
