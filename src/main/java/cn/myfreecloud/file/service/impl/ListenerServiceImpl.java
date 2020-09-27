@@ -1,6 +1,7 @@
 package cn.myfreecloud.file.service.impl;
 
 import cn.myfreecloud.file.service.ListenerService;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.core.io.FileSystemResource;
@@ -17,6 +18,7 @@ import java.io.File;
 /**
  * @author zhangyang
  */
+@Slf4j
 @Service
 public class ListenerServiceImpl implements ListenerService {
 
@@ -52,8 +54,7 @@ public class ListenerServiceImpl implements ListenerService {
             e.printStackTrace();
             System.out.println("文件上传出错");
         }
-        System.out.println(s);
-        System.out.println("file created");
+        log.info("file upload success: interface resp: {}", s);
     }
 
     @Override

@@ -9,7 +9,7 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>cn.myfreecloud</groupId>
-    <artifactId>file</artifactId>
+    <artifactId>radarFileUpload</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>file</name>
     <description>Demo project for Spring Boot</description>
@@ -22,6 +22,12 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter</artifactId>
+        </dependency>
+
+        <!--日志框架-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-logging</artifactId>
         </dependency>
 
         <dependency>

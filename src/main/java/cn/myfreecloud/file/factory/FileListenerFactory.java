@@ -8,6 +8,7 @@ import org.apache.commons.io.filefilter.IOFileFilter;
 import org.apache.commons.io.monitor.FileAlterationMonitor;
 import org.apache.commons.io.monitor.FileAlterationObserver;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
 import java.io.File;
@@ -22,7 +23,8 @@ public class FileListenerFactory {
     /**
      * 设置监听路径
      */
-    private final String monitorDir = "D:\\monitorTest\\";
+    @Value("${monitor.dir}")
+    private String monitorDir;
 
     /**
      * 设置轮询间隔
@@ -42,7 +44,8 @@ public class FileListenerFactory {
                 HiddenFileFilter.VISIBLE);
         IOFileFilter files = FileFilterUtils.and(
                 FileFilterUtils.fileFileFilter(),
-                FileFilterUtils.suffixFileFilter(".log"));
+                // 添加监听文件的类型
+                FileFilterUtils.suffixFileFilter(".csv"));
         IOFileFilter filter = FileFilterUtils.or(directories, files);
 
         // 装配过滤器

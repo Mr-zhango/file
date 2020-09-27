@@ -13,8 +13,9 @@ public class RestTemplateConfig {
     @Bean
     public RestTemplate getRestTemplate(){
     	SimpleClientHttpRequestFactory requestFactory = new SimpleClientHttpRequestFactory();  
-    	requestFactory.setConnectTimeout(3000);  
-    	requestFactory.setReadTimeout(3000);
+    	requestFactory.setConnectTimeout(10000);
+    	// 10s超时
+    	requestFactory.setReadTimeout(100000);
 
 
     	// 解决url转义问题

@@ -1,9 +1,26 @@
 server:
-  port: 9999
+  port: 8090
 
 upload:
   key: dXBsb2FkLTItcHV0b25nLXB1dG9uZw==
-  url: http://localhost:8080/renren-fast/radar/file/savefile
-#upload:
-#  key: 111
-#  url: http://localhost:8080/springbootjlvpC/file/saveFile
+  # url: https://admin.myfreecloud.cn/apis/radar/file/savefile
+  url: https://admin.myfreecloud.cn/apis/radar/file/savefile
+
+monitor:
+  dir: D:\monitorTest\
+
+logging:
+  level:
+    cn:
+      myfreecloud: trace
+  file:
+    path: C:/radarFileUpload/log
+#logging:
+#  level:
+#    cn:
+#      myfreecloud: trace
+#  pattern:
+#    console: '%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %logger{50} - %msg%n'
+#    file: '%d{yyyy-MM-dd HH:mm:ss} === [%thread] === %-5level === %logger{50} ==== %msg%n'
+#  file:
+#    path: /spring/log
