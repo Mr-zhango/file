@@ -3,7 +3,6 @@ server:
 
 upload:
   key: dXBsb2FkLTItcHV0b25nLXB1dG9uZw==
-  # url: https://admin.myfreecloud.cn/apis/radar/file/savefile
   url: https://admin.myfreecloud.cn/apis/radar/file/savefile
 
 monitor:
