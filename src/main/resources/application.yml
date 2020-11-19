@@ -2,8 +2,9 @@ server:
   port: 8090
 
 upload:
-  key: dXBsb2FkLTItcHV0b25nLXB1dG9uZw==
-  url: https://admin.myfreecloud.cn/apis/radar/file/savefile
+  key: dXBsb2FkLTMtYmVpamluZy0xMjM0NTY=
+#  url: https://admin.myfreecloud.cn/apis/radar/file/savefile
+  url: http://localhost:8080/radar/file/savefile
 
 monitor:
   dir: D:\monitorTest\
